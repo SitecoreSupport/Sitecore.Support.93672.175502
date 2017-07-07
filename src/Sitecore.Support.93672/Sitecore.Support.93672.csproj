@@ -55,7 +55,6 @@
     <Compile Include="Shell\Applications\Workbox\WorkboxForm.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="App_Config\Include\zzz\Sitecore.Support.93672.config" />
     <Content Include="Sitecore\Shell\Applications\Workbox\Workbox.xml" />
   </ItemGroup>
   <ItemGroup>
