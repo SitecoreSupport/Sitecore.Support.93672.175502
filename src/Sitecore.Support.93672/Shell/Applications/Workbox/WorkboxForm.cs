@@ -669,8 +669,9 @@ namespace Sitecore.Support.Shell.Applications.Workbox
                 }
             }
             //sitecore.support.93672
-            string fullUrl = WebUtil.GetFullUrl(urlString.ToString());
-            Context.ClientPage.ClientResponse.SetLocation(fullUrl);
+            //string fullUrl = WebUtil.GetFullUrl(urlString.ToString());
+            //Context.ClientPage.ClientResponse.SetLocation(fullUrl);
+            Context.ClientPage.ClientResponse.SetLocation(urlString.ToString());
             //end of sitecore.support.93672
         }
 
