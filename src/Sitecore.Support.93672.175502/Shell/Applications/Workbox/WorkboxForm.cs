@@ -608,10 +608,13 @@ namespace Sitecore.Support.Shell.Applications.Workbox
           url[urlArgument.Key] = urlArgument.Value;
         }
       }
+      #region removed code
+      //var fullUrl = WebUtil.GetFullUrl(url.ToString());
+      #endregion
 
-      var fullUrl = WebUtil.GetFullUrl(url.ToString());
-
-      Context.ClientPage.ClientResponse.SetLocation(fullUrl);
+      #region changed code
+      Context.ClientPage.ClientResponse.SetLocation(url.ToString());
+      #endregion
     }
 
     private static void ShowHistory([NotNull] Message message, [NotNull] string control)
